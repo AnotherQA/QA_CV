@@ -105,12 +105,22 @@ const translations = {
         stack: {
             title: "Stack Tecnológico",
             details: {
-                selenium: "Automatización básica de pruebas funcionales en aplicaciones web, enfocada en validar flujos críticos y detectar regresiones tempranas en escenarios reales de negocio.",
-                postman: "Pruebas y validación de APIs REST, verificando no solo códigos HTTP sino reglas de negocio, integraciones y consistencia de datos entre servicios, portal web y base de datos.",
-                jira: "Gestión integral de incidencias: registro claro, priorización por impacto, seguimiento y comunicación efectiva con equipos de desarrollo y stakeholders en entornos ágiles.",
-                sql: "Análisis y validación de datos en bases Oracle y SQL Server para asegurar integridad, estados correctos, trazabilidad y consistencia en procesos transaccionales.",
-                htmlcss: "Conocimientos base para comprender la estructura y comportamiento del frontend, facilitando la detección de errores funcionales y visuales en aplicaciones web.",
-                git: "Control de versiones para seguimiento de cambios, revisión de proyectos y colaboración en entornos de desarrollo y automatización."
+                selenium: "Automatización básica de pruebas funcionales web",
+                postman: "Pruebas de APIs REST y validación de reglas de negocio",
+                newman: "Ejecución automatizada de colecciones Postman",
+                soap: "Pruebas de servicios SOAP (XML, WSDL, validaciones funcionales)",
+                jmeter: "Pruebas básicas de carga y rendimiento para validación de estabilidad",
+                swagger: "Análisis de contratos de APIs y soporte a pruebas de integración",
+                cicd: "Integración de pruebas en pipelines automatizados",
+                git: "Control de versiones y ejecución de flujos de testing",
+                cloudwatch: "Revisión básica de logs y métricas para análisis de fallos",
+                sql: "Validación de integridad y consistencia de datos (Oracle / SQL Server)",
+                dynamodb: "Conocimiento básico de base de datos NoSQL y validaciones simples",
+                dbeaver: "Cliente de base de datos para análisis QA",
+                jira: "Gestión y seguimiento de incidencias",
+                confluence: "Documentación funcional y evidencias",
+                excel: "Gestión de casos de prueba, matrices y reportes QA",
+                htmlcss: "Comprensión de estructura y validación funcional de interfaces"
             }
         },
         methodology: {
@@ -203,7 +213,7 @@ const translations = {
             ]
         },
         clients: {
-            title: "Experiencia en Proyectos",
+            title: "Clientes Principales",
             items: [
                 {
                     name: "CAVALI",
@@ -341,12 +351,22 @@ const translations = {
         stack: {
             title: "Tech Stack",
             details: {
-                selenium: "Basic automation of functional tests in web applications, focused on validating critical flows and detecting early regressions in real business scenarios.",
-                postman: "Testing and validation of REST APIs, verifying not only HTTP codes but also business rules, integrations, and data consistency between services, web portal, and database.",
-                jira: "Comprehensive incident management: clear registration, prioritization by impact, tracking, and effective communication with development teams and stakeholders in agile environments.",
-                sql: "Data analysis and validation in Oracle and SQL Server databases to ensure integrity, correct states, traceability, and consistency in transactional processes.",
-                htmlcss: "Foundational knowledge to understand frontend structure and behavior, facilitating the detection of functional and visual errors in web applications.",
-                git: "Version control for tracking changes, project review, and collaboration in development and automation environments."
+                selenium: "Basic web functional test automation",
+                postman: "REST API testing and business rule validation",
+                newman: "Automated execution of Postman collections",
+                soap: "SOAP service testing (XML, WSDL, functional validations)",
+                jmeter: "Basic load and performance testing for stability validation",
+                swagger: "API contract analysis and integration testing support",
+                cicd: "Test integration in automated pipelines",
+                git: "Version control and testing flow execution",
+                cloudwatch: "Basic log and metric review for failure analysis",
+                sql: "Data integrity and consistency validation (Oracle / SQL Server)",
+                dynamodb: "Basic NoSQL database knowledge and simple validations",
+                dbeaver: "Database client for QA analysis",
+                jira: "Incident management and tracking",
+                confluence: "Functional documentation and evidence",
+                excel: "Test case management, matrices, and QA reports",
+                htmlcss: "Structure understanding and functional interface validation"
             }
         },
         methodology: {
@@ -439,7 +459,7 @@ const translations = {
             ]
         },
         clients: {
-            title: "Project Experience",
+            title: "Main Clients",
             items: [
                 {
                     name: "CAVALI",

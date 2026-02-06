@@ -212,114 +212,242 @@
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold mb-16 text-center tracking-tight dark:text-white" data-i18n="stack.title">
                 Stack Tecnológico</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-                <!-- Stack Items -->
+            <!-- Category 1: Testing Funcional & Automatización -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-blue-500 pl-3">Testing
+                Funcional & Automatización</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 <!-- Selenium -->
                 <div
-                    class="relative flex flex-col items-center p-6 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-300 group cursor-pointer">
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
                     <i data-lucide="monitor"
-                        class="w-10 h-10 mb-4 text-gray-400 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"></i>
-                    <span
-                        class="font-medium text-sm dark:text-gray-300 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">Selenium</span>
-                    <!-- Tooltip -->
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Selenium</span>
                     <div
-                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 pointer-events-none text-center border border-gray-100 dark:border-gray-700">
-                        <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-light"
-                            data-i18n="stack.details.selenium"></p>
-                        <!-- Arrow -->
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-white dark:border-t-gray-800">
-                        </div>
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.selenium">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
                     </div>
                 </div>
-
                 <!-- Postman -->
                 <div
-                    class="relative flex flex-col items-center p-6 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-300 group cursor-pointer">
-                    <i data-lucide="check-square"
-                        class="w-10 h-10 mb-4 text-gray-400 group-hover:text-orange-500 dark:group-hover:text-orange-400 transition-colors"></i>
-                    <span
-                        class="font-medium text-sm dark:text-gray-300 group-hover:text-orange-500 dark:group-hover:text-orange-400 transition-colors">Postman</span>
-                    <!-- Tooltip -->
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="send"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-orange-500 dark:group-hover:text-orange-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Postman</span>
                     <div
-                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 pointer-events-none text-center border border-gray-100 dark:border-gray-700">
-                        <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-light"
-                            data-i18n="stack.details.postman"></p>
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-white dark:border-t-gray-800">
-                        </div>
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.postman">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
                     </div>
                 </div>
-
-                <!-- Jira -->
+                <!-- Newman -->
                 <div
-                    class="relative flex flex-col items-center p-6 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-300 group cursor-pointer">
-                    <i data-lucide="trello"
-                        class="w-10 h-10 mb-4 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"></i>
-                    <span
-                        class="font-medium text-sm dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Jira</span>
-                    <!-- Tooltip -->
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="terminal"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Newman</span>
                     <div
-                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 pointer-events-none text-center border border-gray-100 dark:border-gray-700">
-                        <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-light"
-                            data-i18n="stack.details.jira"></p>
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-white dark:border-t-gray-800">
-                        </div>
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.newman">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
                     </div>
                 </div>
-
-                <!-- SQL -->
+                <!-- SOAP -->
                 <div
-                    class="relative flex flex-col items-center p-6 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-300 group cursor-pointer">
-                    <i data-lucide="database"
-                        class="w-10 h-10 mb-4 text-gray-400 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors"></i>
-                    <span
-                        class="font-medium text-sm dark:text-gray-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors">SQL</span>
-                    <!-- Tooltip -->
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="file-code"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-red-500 dark:group-hover:text-red-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">SOAP</span>
                     <div
-                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 pointer-events-none text-center border border-gray-100 dark:border-gray-700">
-                        <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-light"
-                            data-i18n="stack.details.sql"></p>
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-white dark:border-t-gray-800">
-                        </div>
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.soap">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
                     </div>
                 </div>
+            </div>
 
-                <!-- HTML/CSS -->
+            <!-- Category 2: Performance & Calidad No Funcional -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-orange-500 pl-3">
+                Performance & Callidad No Funcional</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- JMeter -->
                 <div
-                    class="relative flex flex-col items-center p-6 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-300 group cursor-pointer">
-                    <i data-lucide="code"
-                        class="w-10 h-10 mb-4 text-gray-400 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors"></i>
-                    <span
-                        class="font-medium text-sm dark:text-gray-300 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors">HTML/CSS</span>
-                    <!-- Tooltip -->
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="gauge"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">JMeter</span>
                     <div
-                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 pointer-events-none text-center border border-gray-100 dark:border-gray-700">
-                        <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-light"
-                            data-i18n="stack.details.htmlcss"></p>
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-white dark:border-t-gray-800">
-                        </div>
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.jmeter">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
                     </div>
                 </div>
+            </div>
 
+            <!-- Category 3: APIs & Contratos -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-green-500 pl-3">APIs &
+                Contratos</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Swagger -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="braces"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Swagger / OpenAPI</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.swagger">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: CI/CD & DevOps -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-purple-500 pl-3">CI/CD
+                & DevOps (Soporte QA)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- CI/CD -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="refresh-cw"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">CI/CD Pipelines</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.cicd">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
                 <!-- Git -->
                 <div
-                    class="relative flex flex-col items-center p-6 rounded-xl hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors duration-300 group cursor-pointer">
-                    <i data-lucide="github"
-                        class="w-10 h-10 mb-4 text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors"></i>
-                    <span
-                        class="font-medium text-sm dark:text-gray-300 group-hover:text-black dark:group-hover:text-white transition-colors">Git</span>
-                    <!-- Tooltip -->
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="git-branch"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-black dark:group-hover:text-white transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Git / GitHub</span>
                     <div
-                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10 pointer-events-none text-center border border-gray-100 dark:border-gray-700">
-                        <p class="text-xs text-gray-600 dark:text-gray-300 leading-relaxed font-light"
-                            data-i18n="stack.details.git"></p>
-                        <div
-                            class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 border-8 border-transparent border-t-white dark:border-t-gray-800">
-                        </div>
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.git">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5: Cloud & Monitoreo -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-yellow-500 pl-3">Cloud
+                & Monitoreo</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- CloudWatch -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="cloud-lightning"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">CloudWatch (AWS)</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.cloudwatch">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 6: Datos & Back-End -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-indigo-500 pl-3">Datos
+                & Back-End</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- SQL -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="database"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">SQL (Oracle / SQL Server)</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.sql">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+                <!-- DynamoDB -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="table"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-indigo-500 dark:group-hover:text-indigo-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">DynamoDB</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.dynamodb">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+                <!-- DBeaver -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="hard-drive"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-indigo-400 dark:group-hover:text-indigo-300 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">DBeaver</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.dbeaver">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 7: Gestión, Documentación & Evidencias -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-blue-600 pl-3">Gestión,
+                Documentación & Evidencias</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Jira -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="trello"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Jira</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.jira">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+                <!-- Confluence -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="file-text"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Confluence</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.confluence">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+                <!-- Excel -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="sheet"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">Excel</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.excel">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 8: Front-End -->
+            <h3 class="text-xl font-bold mb-6 text-gray-800 dark:text-gray-200 border-l-4 border-pink-500 pl-3">
+                Front-End (Soporte QA)</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- HTML/CSS -->
+                <div
+                    class="relative flex flex-col items-center p-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all group cursor-pointer">
+                    <i data-lucide="code"
+                        class="w-10 h-10 mb-3 text-gray-400 group-hover:text-pink-600 dark:group-hover:text-pink-400 transition-colors"></i>
+                    <span class="font-medium text-sm dark:text-gray-300">HTML / CSS</span>
+                    <div
+                        class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-3 bg-black text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10 pointer-events-none text-center">
+                        <span data-i18n="stack.details.htmlcss">Verificando...</span>
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-black rotate-45"></div>
                     </div>
                 </div>
             </div>
