@@ -4,9 +4,10 @@ const translations = {
             about: "Sobre mí",
             stack: "Stack",
             projects: "Proyectos",
-            methodology: "Metodología",
-            contact: "Contacto",
+            process: "Proceso",
             bughunt: "Reto QA",
+            contact: "Contacto",
+            back: "Volver",
             toggle: "EN"
         },
         hero: {
@@ -124,7 +125,7 @@ const translations = {
             }
         },
         methodology: {
-            title: "Mi Proceso (Explicado con QA)",
+            title: "Proceso",
             pipeline: {
                 title: "Pipeline de Contratación",
                 stages: {
@@ -214,32 +215,36 @@ const translations = {
         },
         clients: {
             title: "Clientes Principales",
+            view_impact: "Ver Métricas",
             items: [
                 {
                     name: "CAVALI",
-                    desc: "Participación como QA Analyst en plataforma financiera regulada. Validación integral de facturas y pagarés.",
+                    desc: "Plataforma financiera – Facturas y Pagarés",
                     points: [
-                        "Validación end-to-end de procesos críticos: registro, transferencia y cancelación.",
-                        "Aseguramiento de consistencia entre Web, APIs REST y Base de Datos Oracle.",
-                        "Foco en integridad de datos y reducción de riesgos operativos."
+                        "Identificación de +25 defectos funcionales, incluyendo 8–10 de severidad alta relacionados a estados transaccionales.",
+                        "Prevención de errores críticos en procesos end-to-end antes de salida a producción.",
+                        "Reducción aproximada del 30–40% de reprocesos en QA mediante validación cruzada Portal Web + API.",
+                        "Detección temprana de inconsistencias por concurrencia de servicios."
                     ]
                 },
                 {
                     name: "SUNAT (SIRE)",
-                    desc: "Pruebas de integración con servicios tributarios externos y validación de reglas de negocio.",
+                    desc: "Integraciones tributarias – Servicios externos",
                     points: [
-                        "Validación de consumo de APIs y correcta persistencia de información.",
-                        "Verificación de escenarios reales de intercambio de datos tributarios.",
-                        "Aseguramiento de trazabilidad y cumplimiento de flujos definidos."
+                        "Validación de 100% de flujos críticos de integración con servicios SUNAT.",
+                        "Detección de +10 defectos de integración, principalmente en validaciones de payload.",
+                        "Reducción de incidencias post-despliegue en integraciones externas en un 25%.",
+                        "Mejora en la trazabilidad de errores mediante validación de logs y data persistida."
                     ]
                 },
                 {
                     name: "Bolsa de Valores (BVL)",
-                    desc: "Pruebas de sistemas vinculados al entorno del mercado de valores bajo estándares regulados.",
+                    desc: "Ecosistema financiero regulado",
                     points: [
-                        "Validación de procesos financieros críticos con estándares de calidad.",
-                        "Enfoque en pruebas funcionales y consistencia transaccional.",
-                        "Control y trazabilidad propios de entornos regulados."
+                        "Ejecución de pruebas funcionales en 100% de módulos asignados en entorno regulado.",
+                        "Identificación de defectos de consistencia de datos y reglas de negocio.",
+                        "Contribución a releases estables sin rollback, apoyando la confiabilidad del sistema.",
+                        "Reducción del riesgo operativo mediante validación exhaustiva de datos."
                     ]
                 }
             ]
@@ -250,9 +255,10 @@ const translations = {
             about: "About Me",
             stack: "Stack",
             projects: "Projects",
-            methodology: "Methodology",
-            contact: "Contact",
+            process: "Process",
             bughunt: "QA Challenge",
+            contact: "Contact",
+            back: "Back",
             toggle: "ES"
         },
         hero: {
@@ -460,32 +466,36 @@ const translations = {
         },
         clients: {
             title: "Main Clients",
+            view_impact: "View Metrics",
             items: [
                 {
                     name: "CAVALI",
-                    desc: "Participation as QA Analyst in a regulated financial platform. Comprehensive validation of invoices.",
+                    desc: "Financial Platform – Invoices & Promissory Notes",
                     points: [
-                        "End-to-end validation of critical processes: registration, transfer, and cancellation.",
-                        "Ensuring consistency between Web, REST APIs, and Oracle Database.",
-                        "Focus on data integrity and operational risk reduction."
+                        "Identification of +25 functional defects, including 8–10 high severity related to transactional states.",
+                        "Prevention of critical errors in end-to-end processes before production release.",
+                        "Approx. 30–40% reduction in QA rework via cross-validation Web Portal + API.",
+                        "Early detection of inconsistencies due to service concurrency."
                     ]
                 },
                 {
                     name: "SUNAT (SIRE)",
-                    desc: "Integration testing with external tax services and validation of business rules.",
+                    desc: "Tax Integrations – External Services",
                     points: [
-                        "Validation of API consumption and correct information persistence.",
-                        "Verification of real tax data exchange scenarios.",
-                        "Ensuring traceability and compliance with defined flows."
+                        "Validation of 100% of critical integration flows with SUNAT services.",
+                        "Detection of +10 integration defects, mainly in payload validations.",
+                        "Reduction of post-deployment incidents in external integrations by 25%.",
+                        "Improvement in error traceability via logs and persisted data validation."
                     ]
                 },
                 {
                     name: "Stock Exchange (BVL)",
-                    desc: "Testing systems linked to the stock market environment under regulated standards.",
+                    desc: "Regulated Financial Ecosystem",
                     points: [
-                        "Validation of critical financial processes with quality standards.",
-                        "Focus on functional testing and transactional consistency.",
-                        "Control and traceability typical of regulated environments."
+                        "Execution of functional tests on 100% of assigned modules within regulated environment.",
+                        "Identification of data consistency defects and business rules.",
+                        "Contribution to stable releases with no rollback, supporting system reliability.",
+                        "Reduction of operational risk via exhaustive data validation."
                     ]
                 }
             ]

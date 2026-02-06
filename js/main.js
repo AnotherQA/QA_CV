@@ -128,6 +128,18 @@ if (successModal) {
     closeBtns.forEach(btn => btn.addEventListener('click', hideModal));
 }
 
+// --- Client Flip Card Logic ---
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-flip');
+    if (btn) {
+        e.preventDefault();
+        const cardInner = btn.closest('.flip-card-inner');
+        if (cardInner) {
+            cardInner.classList.toggle('flipped');
+        }
+    }
+});
+
 if (contactForm) {
     contactForm.addEventListener('submit', async function (e) {
         e.preventDefault();
