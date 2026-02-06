@@ -191,7 +191,20 @@ if (btnBugVerify && inputBugEmail && feedbackBug) {
             feedbackBug.classList.add('bg-red-50', 'text-red-700', 'dark:bg-red-900/20', 'dark:text-red-400');
         } else {
             // Has @ but NO valid domain extension -> BUG FOUND!
-            feedbackBug.textContent = current.success;
+            // feedbackBug.textContent = current.success; // OLD
+
+            const waLink = "https://wa.me/51975510066?text=Adivin%C3%A9%20el%20bug,%20ahora%20quiero%20hablar%20con%20el%20tester";
+
+            feedbackBug.innerHTML = `
+                <p class="mb-3 font-semibold">${current.success}</p>
+                <a href="${waLink}" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-sm font-medium">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    Reclamar recompensa (WhatsApp)
+                </a>
+            `;
+
+            if (window.lucide) window.lucide.createIcons();
+
             feedbackBug.classList.add('bg-green-50', 'text-green-700', 'dark:bg-green-900/20', 'dark:text-green-400');
         }
     });
