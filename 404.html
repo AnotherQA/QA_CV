@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Bug Found | Wilder Carranza</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+
+<body
+    class="bg-white dark:bg-black text-black dark:text-white transition-colors duration-300 font-sans h-screen flex items-center justify-center p-4">
+    <div class="text-center max-w-md">
+        <div
+            class="inline-flex items-center justify-center w-24 h-24 bg-gray-100 dark:bg-gray-900 rounded-full mb-8 relative">
+            <i data-lucide="bug" class="w-12 h-12 text-black dark:text-white"></i>
+            <div class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">404
+            </div>
+        </div>
+
+        <h1 class="text-4xl font-bold mb-4 tracking-tight">¡Ups! Encontraste un Bug</h1>
+        <p class="text-gray-600 dark:text-gray-400 mb-8 font-light text-lg">
+            La página que buscas no existe o ha sido eliminada. Como buen QA, ya he reportado este incidente.
+        </p>
+
+        <a href="index.html"
+            class="inline-flex items-center gap-2 px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:opacity-90 transition-opacity">
+            <i data-lucide="arrow-left" class="w-4 h-4"></i>
+            Volver al Inicio
+        </a>
+    </div>
+
+    <script>
+        // Simple Theme Check to match system/saved preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
