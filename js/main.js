@@ -172,6 +172,14 @@ const inputBugEmail = document.getElementById('bug-email');
 const feedbackBug = document.getElementById('bug-feedback');
 
 if (btnBugVerify && inputBugEmail && feedbackBug) {
+    // Check for Enter key
+    inputBugEmail.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            btnBugVerify.click();
+        }
+    });
+
     btnBugVerify.addEventListener('click', (e) => {
         e.preventDefault(); // Prevent accidental submit
         const val = inputBugEmail.value.trim();
