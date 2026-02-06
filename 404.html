@@ -41,7 +41,8 @@
             La página que buscas no existe o ha sido eliminada. Como buen QA, ya he reportado este incidente.
         </p>
 
-        <a href="index.html"
+        <a href="#"
+            onclick="event.preventDefault(); const repo = '/QA_CV/'; window.location.href = window.location.hostname.includes('github.io') ? repo : '/';"
             class="inline-flex items-center gap-2 px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:opacity-90 transition-opacity">
             <i data-lucide="arrow-left" class="w-4 h-4"></i>
             Volver al Inicio
