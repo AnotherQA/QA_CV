@@ -43,6 +43,7 @@ const translations = {
                     ],
                     video_title: "Demo en video",
                     video_desc: "Se observa la ejecución de la colección completa desde la terminal utilizando Newman. Se aprecia cómo los 15 tests pasan en menos de 2 segundos y se genera automáticamente un reporte visual detallado.",
+                    video_id: "dQw4w9WgXcQ",
                     evidence_title: "Evidencia y descargas",
                     downloads: [
                         { text: "Descargar Reporte", icon: "file-text", url: "#" },
@@ -69,6 +70,7 @@ const translations = {
                     ],
                     video_title: "Demo en video",
                     video_desc: "El video muestra al script levantando una instancia limpia del navegador, completando un formulario de registro y validando el mensaje de éxito automáticamente, todo en menos de 10 segundos, sin intervención humana.",
+                    video_id: "dQw4w9WgXcQ",
                     evidence_title: "Evidencia y descargas",
                     downloads: [
                         { text: "Descargar Capturas", icon: "image", url: "#" },
@@ -95,6 +97,7 @@ const translations = {
                     ],
                     video_title: "Demo en video",
                     video_desc: "Visualización del dashboard de JMeter en tiempo real: se ven las gráficas de 'Active Threads' subiendo y cómo afecta esto a la curva de 'Response Time', estabilizándose al finalizar la prueba.",
+                    video_id: "dQw4w9WgXcQ",
                     evidence_title: "Evidencia y descargas",
                     downloads: [
                         { text: "Descargar Reporte", icon: "file-bar-chart", url: "#" },
@@ -182,7 +185,8 @@ const translations = {
         },
         video: {
             title: "Video Presentación",
-            placeholder: "Video próximamente..."
+            placeholder: "Video próximamente...",
+            video_id: "dQw4w9WgXcQ" // Example ID (Rick Roll) - User should replace
         },
         certifications: {
             title: "Certificaciones",
@@ -294,6 +298,7 @@ const translations = {
                     ],
                     video_title: "Video Demo",
                     video_desc: "The execution of the complete collection is observed from the terminal using Newman. It shows how the 15 tests pass in less than 2 seconds and a detailed visual report is automatically generated.",
+                    video_id: "dQw4w9WgXcQ",
                     evidence_title: "Evidence and downloads",
                     downloads: [
                         { text: "Download Report", icon: "file-text", url: "#" },
@@ -320,6 +325,7 @@ const translations = {
                     ],
                     video_title: "Video Demo",
                     video_desc: "The video shows the script launching a clean browser instance, filling out a registration form, and automatically validating the success message, all in less than 10 seconds, without human intervention.",
+                    video_id: "dQw4w9WgXcQ",
                     evidence_title: "Evidence and downloads",
                     downloads: [
                         { text: "Download Captures", icon: "image", url: "#" },
@@ -346,6 +352,7 @@ const translations = {
                     ],
                     video_title: "Video Demo",
                     video_desc: "Real-time visualization of the JMeter dashboard: showing 'Active Threads' graphs rising and how this affects the 'Response Time' curve, stabilizing at the end of the test.",
+                    video_id: "dQw4w9WgXcQ",
                     evidence_title: "Evidence and downloads",
                     downloads: [
                         { text: "Download Report", icon: "file-bar-chart", url: "#" },
@@ -433,7 +440,8 @@ const translations = {
         },
         video: {
             title: "Video Introduction",
-            placeholder: "Video coming soon..."
+            placeholder: "Video coming soon...",
+            video_id: "dQw4w9WgXcQ"
         },
         certifications: {
             title: "Certifications",
