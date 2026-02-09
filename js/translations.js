@@ -43,7 +43,7 @@ const translations = {
                     ],
                     video_title: "Demo en video",
                     video_desc: "Se observa la ejecución de la colección completa desde la terminal utilizando Newman. Se aprecia cómo los 15 tests pasan en menos de 2 segundos y se genera automáticamente un reporte visual detallado.",
-                    video_id: "dQw4w9WgXcQ",
+                    video_id: "sHp5kGuJspk",
                     evidence_title: "Evidencia y descargas",
                     downloads: [
                         { text: "Descargar Reporte", icon: "file-text", url: "#" },
@@ -70,7 +70,7 @@ const translations = {
                     ],
                     video_title: "Demo en video",
                     video_desc: "El video muestra al script levantando una instancia limpia del navegador, completando un formulario de registro y validando el mensaje de éxito automáticamente, todo en menos de 10 segundos, sin intervención humana.",
-                    video_id: "dQw4w9WgXcQ",
+                    video_id: "sHp5kGuJspk",
                     evidence_title: "Evidencia y descargas",
                     downloads: [
                         { text: "Descargar Capturas", icon: "image", url: "#" },
