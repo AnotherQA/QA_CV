@@ -287,6 +287,7 @@ const modalScopeList = document.getElementById('modal-scope-list');
 const modalVideoTitle = document.getElementById('modal-video-title');
 const modalVideoDesc = document.getElementById('modal-video-desc');
 const modalVideoFrame = document.getElementById('modal-video-frame');
+const modalVideoOverlay = document.getElementById('modal-video-overlay'); // New REF
 const modalEvidenceTitle = document.getElementById('modal-evidence-title');
 const modalEvidenceText = document.getElementById('modal-evidence-text');
 
@@ -323,8 +324,10 @@ function openProjectModal(index) {
     if (projectData.video_id) {
         modalVideoFrame.src = `https://www.youtube.com/embed/${projectData.video_id}`;
         modalVideoFrame.parentElement.classList.remove('hidden');
+        if (modalVideoOverlay) modalVideoOverlay.classList.add('hidden'); // Hide overlay
     } else {
         modalVideoFrame.src = "";
+        if (modalVideoOverlay) modalVideoOverlay.classList.remove('hidden'); // Show overlay if no video
         // Optional: Hide container if no video
         // modalVideoFrame.parentElement.classList.add('hidden'); 
     }
