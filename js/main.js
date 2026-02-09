@@ -92,16 +92,23 @@ const updateLanguageContent = (lang) => {
     const videoData = translations[lang].video;
     const videoContainer = document.getElementById('video-presentation-container');
     if (videoContainer && videoData && videoData.video_id) {
-        // Only inject if not already injected or if ID changed (simple check: if innerHTML doesn't contain iframe)
-        if (!videoContainer.querySelector('iframe')) {
+        let iframe = videoContainer.querySelector('iframe');
+        const newSrc = `https://www.youtube.com/embed/${videoData.video_id}`;
+
+        if (!iframe) {
             videoContainer.innerHTML = `
                 <iframe class="w-full h-full" 
-                    src="https://www.youtube.com/embed/${videoData.video_id}" 
+                    src="${newSrc}" 
                     title="${videoData.title}" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen>
                 </iframe>
            `;
+        } else {
+            // Check if src needs update
+            if (!iframe.src.includes(videoData.video_id)) {
+                iframe.src = newSrc;
+            }
         }
     }
 };
@@ -324,10 +331,16 @@ function openProjectModal(index) {
     if (projectData.video_id) {
         modalVideoFrame.src = `https://www.youtube.com/embed/${projectData.video_id}`;
         modalVideoFrame.parentElement.classList.remove('hidden');
-        if (modalVideoOverlay) modalVideoOverlay.classList.add('hidden'); // Hide overlay
+        if (modalVideoOverlay) {
+            modalVideoOverlay.classList.add('hidden'); // Force hide overlay
+            modalVideoOverlay.style.display = 'none'; // Double ensure
+        }
     } else {
         modalVideoFrame.src = "";
-        if (modalVideoOverlay) modalVideoOverlay.classList.remove('hidden'); // Show overlay if no video
+        if (modalVideoOverlay) {
+            modalVideoOverlay.classList.remove('hidden');
+            modalVideoOverlay.style.display = '';
+        }
         // Optional: Hide container if no video
         // modalVideoFrame.parentElement.classList.add('hidden'); 
     }
