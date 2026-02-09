@@ -413,19 +413,33 @@ if (projectModal) {
     });
 }
 
-// --- Video Status Toast Logic ---
-const videoToast = document.getElementById('video-toast');
-const videoToastDismiss = document.getElementById('video-toast-dismiss');
+// --- Video Info Modal Logic ---
+const videoInfoBtn = document.getElementById('video-info-btn');
+const videoInfoModal = document.getElementById('video-info-modal');
+const videoInfoCloseBtn = document.getElementById('video-info-close-btn');
+const videoInfoCloseIcon = document.getElementById('video-info-close-icon');
 
-if (videoToast && videoToastDismiss) {
-    // Show toast after a small delay (e.g., 2 seconds)
-    setTimeout(() => {
-        // Only show if user hasn't dismissed it previously in this session (optional, simpler to just show)
-        videoToast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-20');
-    }, 2500);
+if (videoInfoBtn && videoInfoModal) {
+    function openVideoModal() {
+        videoInfoModal.classList.remove('opacity-0', 'pointer-events-none');
+        videoInfoModal.querySelector('div').classList.remove('scale-95');
+        videoInfoModal.querySelector('div').classList.add('scale-100');
+    }
 
-    videoToastDismiss.addEventListener('click', () => {
-        videoToast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-20');
+    function closeVideoModal() {
+        videoInfoModal.classList.add('opacity-0', 'pointer-events-none');
+        videoInfoModal.querySelector('div').classList.add('scale-95');
+        videoInfoModal.querySelector('div').classList.remove('scale-100');
+    }
+
+    videoInfoBtn.addEventListener('click', openVideoModal);
+
+    if (videoInfoCloseBtn) videoInfoCloseBtn.addEventListener('click', closeVideoModal);
+    if (videoInfoCloseIcon) videoInfoCloseIcon.addEventListener('click', closeVideoModal);
+
+    // Close on click outside
+    videoInfoModal.addEventListener('click', (e) => {
+        if (e.target === videoInfoModal) closeVideoModal();
     });
 }
 

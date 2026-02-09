@@ -254,8 +254,13 @@ const translations = {
             ]
         },
         notifications: {
-            video_status: "⚠️ Nota: Los videos mostrados son referenciales (tutoriales/demos). Los videos reales de mis proyectos están en proceso de grabación y edición.",
-            dismiss: "Entendido"
+            info_btn: "ℹ️ Estado Videos",
+            modal: {
+                title: "Estado de los Demos",
+                text: "Los videos mostrados actualmente son referenciales (tutoriales/demos de terceros) para demostrar la integración técnica en el portafolio.",
+                note: "Nota: Los videos reales de mis proyectos están en proceso de grabación y edición. Sin embargo, el código en los repositorios (GitHub) es correcto, funcional y de mi autoría.",
+                close: "Entendido"
+            }
         },
     },
     en: {
@@ -513,8 +518,13 @@ const translations = {
             ]
         },
         notifications: {
-            video_status: "⚠️ Note: The videos shown are for reference (tutorials/demos). The real project videos are currently in recording and editing process.",
-            dismiss: "Got it"
+            info_btn: "ℹ️ Video Status",
+            modal: {
+                title: "Demo Status",
+                text: "The videos currently shown are for reference (third-party tutorials/demos) to demonstrate technical integration in the portfolio.",
+                note: "Note: The real project videos are currently in the recording and editing process. However, the code in the repositories (GitHub) is correct, functional, and authored by me.",
+                close: "Got it"
+            }
         },
         footer: {
             rights: "© 2026 Wilder Carranza. All rights reserved.",
