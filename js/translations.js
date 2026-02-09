@@ -186,7 +186,7 @@ const translations = {
         video: {
             title: "Video Presentación",
             placeholder: "Video próximamente...",
-            video_id: "sHp5kGuJspk"
+            video_id: "FRn5J31eAMw"
         },
         certifications: {
             title: "Certificaciones",
@@ -441,7 +441,7 @@ const translations = {
         video: {
             title: "Video Introduction",
             placeholder: "Video coming soon...",
-            video_id: "sHp5kGuJspk"
+            video_id: "FRn5J31eAMw"
         },
         certifications: {
             title: "Certifications",
