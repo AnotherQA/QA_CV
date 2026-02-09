@@ -1461,6 +1461,27 @@
         </div>
     </div>
 
+    <!-- Video Status Toast -->
+    <div id="video-toast"
+        class="fixed bottom-6 right-6 z-50 transform transition-all duration-500 translate-y-20 opacity-0 pointer-events-none max-w-sm w-full mx-4 sm:mx-0">
+        <div
+            class="bg-white dark:bg-gray-800 border-l-4 border-yellow-500 rounded-lg shadow-2xl p-4 flex gap-4 items-start ring-1 ring-black/5 dark:ring-white/10">
+            <i data-lucide="info" class="w-6 h-6 text-yellow-500 flex-shrink-0 mt-0.5"></i>
+            <div class="flex-grow">
+                <p id="video-toast-text"
+                    class="text-sm text-gray-700 dark:text-gray-200 font-medium leading-relaxed mb-3"
+                    data-i18n="notifications.video_status">
+                    <!-- Text injected via JS -->
+                </p>
+                <button id="video-toast-dismiss"
+                    class="text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white uppercase tracking-wider transition-colors px-2 py-1 rounded bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600"
+                    data-i18n="notifications.dismiss">
+                    <!-- Dismiss text -->
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Init JS -->
     <script type="module" src="js/main.js?v=1.1"></script>
     <script>

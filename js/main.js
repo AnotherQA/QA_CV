@@ -413,3 +413,19 @@ if (projectModal) {
     });
 }
 
+// --- Video Status Toast Logic ---
+const videoToast = document.getElementById('video-toast');
+const videoToastDismiss = document.getElementById('video-toast-dismiss');
+
+if (videoToast && videoToastDismiss) {
+    // Show toast after a small delay (e.g., 2 seconds)
+    setTimeout(() => {
+        // Only show if user hasn't dismissed it previously in this session (optional, simpler to just show)
+        videoToast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-20');
+    }, 2500);
+
+    videoToastDismiss.addEventListener('click', () => {
+        videoToast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-20');
+    });
+}
+

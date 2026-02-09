@@ -253,6 +253,10 @@ const translations = {
                 }
             ]
         },
+        notifications: {
+            video_status: "⚠️ Nota: Los videos mostrados son referenciales (tutoriales/demos). Los videos reales de mis proyectos están en proceso de grabación y edición.",
+            dismiss: "Entendido"
+        },
     },
     en: {
         nav: {
@@ -507,6 +511,10 @@ const translations = {
                     ]
                 }
             ]
+        },
+        notifications: {
+            video_status: "⚠️ Note: The videos shown are for reference (tutorials/demos). The real project videos are currently in recording and editing process.",
+            dismiss: "Got it"
         },
         footer: {
             rights: "© 2026 Wilder Carranza. All rights reserved.",
