@@ -87,6 +87,23 @@ const updateLanguageContent = (lang) => {
     if (currentProjectIndex !== null) {
         openProjectModal(currentProjectIndex);
     }
+
+    // Refresh Presentation Video
+    const videoData = translations[lang].video;
+    const videoContainer = document.getElementById('video-presentation-container');
+    if (videoContainer && videoData && videoData.video_id) {
+        // Only inject if not already injected or if ID changed (simple check: if innerHTML doesn't contain iframe)
+        if (!videoContainer.querySelector('iframe')) {
+            videoContainer.innerHTML = `
+                <iframe class="w-full h-full" 
+                    src="https://www.youtube.com/embed/${videoData.video_id}" 
+                    title="${videoData.title}" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+           `;
+        }
+    }
 };
 
 const toggleLanguage = () => {
@@ -302,9 +319,15 @@ function openProjectModal(index) {
 
     modalVideoTitle.textContent = projectData.video_title;
     modalVideoDesc.textContent = projectData.video_desc;
-    // TODO: Set actual video URL when available. For now, empty or placeholder.
-    // modalVideoFrame.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?si=..."; 
-    modalVideoFrame.src = ""; // Keep empty for now or use a placeholder if preferred
+
+    if (projectData.video_id) {
+        modalVideoFrame.src = `https://www.youtube.com/embed/${projectData.video_id}`;
+        modalVideoFrame.parentElement.classList.remove('hidden');
+    } else {
+        modalVideoFrame.src = "";
+        // Optional: Hide container if no video
+        // modalVideoFrame.parentElement.classList.add('hidden'); 
+    }
 
     modalEvidenceTitle.textContent = projectData.evidence_title;
 
